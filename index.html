@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" type="image/png" href="icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sistema de Login</title>
+</head>
+<body>
+<div class="container">
+    <div class="login-box">
+        <div class="login-card">
+            <h2>Bem-vindo</h2>
+            <p>Acesse sua conta para continuar</p>
+
+            <div class="field-group">
+                <input type="email" id="email" placeholder="E-mail">
+                <small id="erro-login-email" class="error-text">E-mail não encontrado</small>
+            </div>
+
+            <div class="field-group">
+                <input type="password" id="senha" placeholder="Senha">
+                <small id="erro-login-senha" class="error-text">Senha incorreta</small>
+            </div>
+
+            <button onclick="login()">Entrar</button>
+            <p class="footer-link">Não tem conta? <a href="cadastro.html">Crie agora</a></p>
+        </div>
+    </div>
+    <div class="image-box">
+        <img src="ilustracao-dev.png.svg" alt="Dev">
+    </div>
+</div>
+<script type="module" src="script.js"></script>
+</body>
+</html>

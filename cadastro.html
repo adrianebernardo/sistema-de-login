@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" type="image/png" href="icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+<div class="cadastro-container">
+    <div class="login-card">
+        <h2>Criar Conta</h2>
+
+        <div class="field-group">
+            <input type="text" id="nome" placeholder="Nome completo">
+            <small id="erro-nome" class="error-text">Campo obrigatório</small>
+            <small id="erro-nome-invalido" class="error-text">Nome não pode conter números</small>
+        </div>
+
+        <div class="field-group">
+            <input type="email" id="email" placeholder="E-mail">
+            <small id="erro-email" class="error-text">Campo obrigatório</small>
+            <small id="erro-email-invalido" class="error-text">E-mail inválido</small>
+            <small id="erro-email-duplicado" class="error-text">Este e-mail já está cadastrado</small>
+        </div>
+
+        <div class="field-group">
+            <input type="password" id="senha" placeholder="Senha (mínimo 6 caracteres)">
+            <small id="erro-senha" class="error-text">Campo obrigatório</small>
+            <small id="erro-senha-fraca" class="error-text">A senha deve ter pelo menos 6 caracteres</small>
+        </div>
+
+        <div class="field-group">
+            <input type="date" id="dataNascimento">
+            <small id="erro-dataNascimento" class="error-text">Campo obrigatório</small>
+        </div>
+
+        <div class="field-group">
+            <input type="text" id="cidade" placeholder="Cidade">
+            <small id="erro-cidade" class="error-text">Campo obrigatório</small>
+        </div>
+
+        <div class="field-group">
+            <input type="text" id="cpf" placeholder="CPF (somente números)" maxlength="11" inputmode="numeric">
+            <small id="erro-cpf" class="error-text">Campo obrigatório</small>
+            <small id="erro-cpf-invalido" class="error-text">CPF deve conter apenas números</small>
+            <small id="erro-cpf-duplicado" class="error-text">Este CPF já está cadastrado</small>
+        </div>
+
+        <div id="msg-cadastro" class="msg-box" style="display:none"></div>
+
+        <button onclick="cadastrar()">Cadastrar</button>
+        <p class="footer-link"><a href="index.html">Voltar ao login</a></p>
+    </div>
+</div>
+<script type="module" src="script.js"></script>
+</body>
+</html>

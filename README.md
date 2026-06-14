@@ -39,3 +39,10 @@ https://sistema-login-d0f98.web.app/
 1. Clone este repositório:
    ```bash
    git clone https://github.com/adrianebernardo/sistema-de-login.git
+
+
+**Tela de Login:**
+![Tela de Login](assets/login.png)
+
+**Tela de Cadastro:**
+![Tela de Cadastro](assets/cadastro.png)
